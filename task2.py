@@ -11,22 +11,27 @@ def minhash(S, k):
 				Characteristics[i][j] = 1
 	#print Characteristics
 
-	rp = random.permutation(len(Words))
-	print rp[0]
-	print len(Words)
-	print Characteristics[rp[4]][0]
-	j = 0
-	#while Characteristics[rp[j]][0] != 1:
-	#	j += 1
-	#Signatures[0][j] = 1
 
-	print Signatures
+	for h in range(k):
+		rp = random.permutation(len(Words))
+		for j in range(len(S)):
+			w = 0
+			while Characteristics[rp[w]][j] != 1:
+				w += 1
+			Signatures[h][j] = w
+
+	#print Signatures
+	#print Words
+	return Words, Signatures
 
 #minhash([ [1, 2, 3], [3, 4, 5] ], 3)
 
 #s = [['hoi'], ['hoi', 'doei'], ['oi', 'oei']] # 'S is a list of lists of strings'
 S =  [ ['hoi'], ['hoe', 'gaat', 'het'], ['groet'] ]
-minhash(S, 2)
+w, s = minhash(S, 2)
+
+print w
+print s
 
 #and returns two objects: a sorted list of all strings that occur in S
 # Sorted how?
