@@ -27,11 +27,11 @@ def minhash(S, k):
 #minhash([ [1, 2, 3], [3, 4, 5] ], 3)
 
 #s = [['hoi'], ['hoi', 'doei'], ['oi', 'oei']] # 'S is a list of lists of strings'
-S =  [ ['hoi'], ['hoe', 'gaat', 'het'], ['groet'] ]
-w, s = minhash(S, 2)
+#S =  [ ['hoi'], ['hoe', 'gaat', 'het'], ['groet'] ]
+#w, s = minhash(S, 2)
 
-print w
-print s
+#print w
+#print s
 
 #and returns two objects: a sorted list of all strings that occur in S
 # Sorted how?
