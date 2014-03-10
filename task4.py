@@ -17,4 +17,4 @@ def sketch(M, k):
 					sketches[i][j] = -1
 	return sketches
 
-sketch(array([[1.0, 2.0, 3.0], [1.0, 2.0, 3.0]]), 2)
+#sketch(array([[1.0, 2.0, 3.0], [1.0, 2.0, 3.0]]), 2)
